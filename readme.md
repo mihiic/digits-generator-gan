@@ -12,7 +12,11 @@ project folder run following commands:
 pip3 install -r requirements.txt
 ```
 
-### Credits
+## Running Project
+Make sure your .png images of datasheets are located in the dataset folder.
+They should be in the _.png_ format.
+
+## Credits
 
 #### Author
 Mihael Međan
