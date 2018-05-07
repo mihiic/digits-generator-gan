@@ -14,8 +14,8 @@ pip3 install -r requirements.txt
 
 ### Credits
 
-Author:
+#### Author
 Mihael Međan
 
-Mentor:
+####Mentor
 Marin Šilić
