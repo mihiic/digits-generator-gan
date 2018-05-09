@@ -13,7 +13,7 @@ class StateTitle(Drawable):
             anchor_y='center',
             x=40,
             y=state.height - 40,
-            color=(0,0,0,255)
+            color=(0, 0, 0, 255)
         )
 
     def draw(self):

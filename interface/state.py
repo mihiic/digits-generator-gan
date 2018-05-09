@@ -27,7 +27,7 @@ class State:
             drawable.draw()
 
     def add_drawable(self, drawable):
-        if not isinstance(drawable, Drawable):
+        if drawable.draw is None:
             raise Exception('Element must implement Drawable interface')
 
         self.drawables.append(drawable)

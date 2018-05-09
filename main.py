@@ -1,5 +1,6 @@
 import pyglet
 from interface.image_loader_state import ImageLoaderState
+from interface.image_tweaker_state import ImageTweakerState
 from interface.state_machine import StateMachine
 from window_events import WindowEventHandler
 
@@ -12,6 +13,9 @@ state_machine = StateMachine(window)
 image_loader_state = ImageLoaderState('image-loader-state', state_machine)
 state_machine.add_state(image_loader_state)
 state_machine.activate_state('image-loader-state')
+
+image_tweaker_state = ImageTweakerState('image-tweaker-state', state_machine)
+state_machine.add_state(image_tweaker_state)
 
 event_handler = WindowEventHandler(state_machine, window)
 window.push_handlers(event_handler)

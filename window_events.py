@@ -17,3 +17,10 @@ class WindowEventHandler(object):
     def on_draw(self):
         self.window.clear()
         self.state_machine.draw()
+
+    def on_mouse_motion(self, x, y, dx, dy):
+        self.state_machine.mouseX = x
+        self.state_machine.mouseY = y
+
+    def on_mouse_press(self, x, y, button, modifiers):
+        self.state_machine.clicked = button == pyglet.window.mouse.LEFT

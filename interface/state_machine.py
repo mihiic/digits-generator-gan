@@ -3,6 +3,12 @@ class StateMachine:
         self.states = []
         self.active_state = None
         self.window = window
+        self.mouseX = 0
+        self.mouseY = 0
+        self.clicked = False
+        self.seed_file = False
+
+        self.seed_file = None
 
     def add_state(self, state):
         self.states.append(state)
