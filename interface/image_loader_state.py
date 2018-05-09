@@ -29,7 +29,7 @@ class ImageLoaderState(State):
 
     def toggle_file(self, filename):
         self.machine.seed_file = filename
-        self.machine.activate_state('image-tweaker-state')
+        self.machine.activate_state('image-perspective-state')
 
     def add_file_handlers(self):
         current_y = 220

@@ -18,3 +18,6 @@ class SectionTitle(Drawable):
 
     def draw(self):
         self.label.draw()
+
+    def change_title(self, new_title):
+        self.label.text = new_title
