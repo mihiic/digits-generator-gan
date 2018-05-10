@@ -1,4 +1,6 @@
 import pyglet
+
+from interface.image_cutter_state import ImageCutterState
 from interface.image_loader_state import ImageLoaderState
 from interface.image_perspective_state import ImagePerspectiveState
 from interface.image_tweaker_state import ImageTweakerState
@@ -20,6 +22,9 @@ state_machine.add_state(image_perspective_state)
 
 image_tweaker_state = ImageTweakerState('image-tweaker-state', state_machine)
 state_machine.add_state(image_tweaker_state)
+
+image_cutter_state = ImageCutterState('image-cutter-state', state_machine)
+state_machine.add_state(image_cutter_state)
 
 event_handler = WindowEventHandler(state_machine, window)
 window.push_handlers(event_handler)

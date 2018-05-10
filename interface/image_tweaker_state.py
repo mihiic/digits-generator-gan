@@ -34,7 +34,7 @@ class ImageTweakerState(State):
     def update(self):
         if self.machine.clicked:
             if self.step == 3:
-                # change state
+                self.machine.activate_state('image-cutter-state')
                 return
             else:
                 self.machine.clicked = False

@@ -13,6 +13,7 @@ class WindowEventHandler(object):
 
         shutil.rmtree('workdata')
         os.mkdir('workdata')
+        os.mkdir('workdata/neural')
 
         self.window.pop_handlers()
         self.window.has_exit = True
