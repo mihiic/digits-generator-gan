@@ -1,0 +1,14 @@
+import time
+print("\r \#")
+time.sleep(1)
+
+print("\r \#")
+time.sleep(1)
+
+print("\r \#")time.sleep(1)
+
+print("\r \#")
+print("\r \#")
+print("\r \#")
+print("\r \#")
+print("\r \#")

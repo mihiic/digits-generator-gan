@@ -7,6 +7,7 @@ class StateMachine:
         self.mouseY = 0
         self.clicked = False
         self.seed_file = False
+        self.config = None
 
         self.seed_file = None
 

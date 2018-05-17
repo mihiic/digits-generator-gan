@@ -11,9 +11,9 @@ class WindowEventHandler(object):
     def on_close(self):
         self.state_machine.destroy()
 
-        shutil.rmtree('workdata')
-        os.mkdir('workdata')
-        os.mkdir('workdata/neural')
+        # shutil.rmtree('workdata')
+        # os.mkdir('workdata')
+        # os.mkdir('workdata/neural')
 
         self.window.pop_handlers()
         self.window.has_exit = True

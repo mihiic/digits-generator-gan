@@ -1,0 +1,11 @@
+config:
+  discriminative:
+    input_x: 28
+    input_y: 28
+    output: 10
+    hidden_layers: 3
+    neurons_in_hidden_layer: 20
+
+  generative:
+    input_neurons: 11
+    output_neurons: 784
